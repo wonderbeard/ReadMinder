@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42FE7A2E0F07CACBCC4828E8 /* Pods_ReadMinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D90C9B73B6DDE2093A53F5 /* Pods_ReadMinderUITests.framework */; };
-		915462242028F9E800323B46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915462232028F9E800323B46 /* AppDelegate.swift */; };
+		915462242028F9E800323B46 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915462232028F9E800323B46 /* Application.swift */; };
 		915462262028F9E800323B46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915462252028F9E800323B46 /* ViewController.swift */; };
 		915462292028F9E800323B46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915462272028F9E800323B46 /* Main.storyboard */; };
 		9154622B2028F9E800323B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9154622A2028F9E800323B46 /* Assets.xcassets */; };
@@ -17,13 +17,14 @@
 		915462442028F9E900323B46 /* ReadMinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915462432028F9E900323B46 /* ReadMinderUITests.swift */; };
 		917EBD442030D13900973A30 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917EBD432030D13900973A30 /* ShareViewController.swift */; };
 		917EBD472030D13900973A30 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917EBD452030D13900973A30 /* MainInterface.storyboard */; };
-		917EBD4B2030D13900973A30 /* Share.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 917EBD412030D13900973A30 /* Share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		917EBD4B2030D13900973A30 /* Share.iOS.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 917EBD412030D13900973A30 /* Share.iOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		917EBD512030D17C00973A30 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917EBD502030D17C00973A30 /* CloudKit.framework */; };
 		917EBD532030D22300973A30 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917EBD502030D17C00973A30 /* CloudKit.framework */; };
 		917EBD612030E1E900973A30 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917EBD602030E1E900973A30 /* NotificationCenter.framework */; };
 		917EBD642030E1E900973A30 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917EBD632030E1E900973A30 /* TodayViewController.swift */; };
 		917EBD672030E1E900973A30 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917EBD652030E1E900973A30 /* MainInterface.storyboard */; };
-		917EBD6B2030E1E900973A30 /* Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 917EBD5F2030E1E900973A30 /* Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		917EBD6B2030E1E900973A30 /* Today.iOS.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 917EBD5F2030E1E900973A30 /* Today.iOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		917EBD8B2030F15F00973A30 /* MainAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917EBD8A2030F15F00973A30 /* MainAssembler.swift */; };
 		AA144A30AAF2D3065DFAA361 /* Pods_ReadMinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47A708D7CC28180B2D81467 /* Pods_ReadMinder.framework */; };
 		BBDB638E6817F40D723D4589 /* Pods_ReadMinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1055B6362C65A12746FDD990 /* Pods_ReadMinderTests.framework */; };
 /* End PBXBuildFile section */
@@ -66,8 +67,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				917EBD6B2030E1E900973A30 /* Today.appex in Embed App Extensions */,
-				917EBD4B2030D13900973A30 /* Share.appex in Embed App Extensions */,
+				917EBD6B2030E1E900973A30 /* Today.iOS.appex in Embed App Extensions */,
+				917EBD4B2030D13900973A30 /* Share.iOS.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,32 +78,33 @@
 /* Begin PBXFileReference section */
 		1055B6362C65A12746FDD990 /* Pods_ReadMinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadMinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E71C54BFD911EB8ECD6F777 /* Pods-ReadMinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadMinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReadMinderTests/Pods-ReadMinderTests.release.xcconfig"; sourceTree = "<group>"; };
-		915462202028F9E800323B46 /* ReadMinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadMinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		915462232028F9E800323B46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		915462202028F9E800323B46 /* ReadMinder.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadMinder.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		915462232028F9E800323B46 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		915462252028F9E800323B46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		915462282028F9E800323B46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9154622A2028F9E800323B46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9154622D2028F9E800323B46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9154622F2028F9E800323B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		915462342028F9E900323B46 /* ReadMinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadMinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		915462342028F9E900323B46 /* ReadMinder.iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReadMinder.iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		915462382028F9E900323B46 /* ReadMinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMinderTests.swift; sourceTree = "<group>"; };
 		9154623A2028F9E900323B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9154623F2028F9E900323B46 /* ReadMinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadMinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9154623F2028F9E900323B46 /* ReadMinder.iOS-UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReadMinder.iOS-UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		915462432028F9E900323B46 /* ReadMinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMinderUITests.swift; sourceTree = "<group>"; };
 		915462452028F9E900323B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		917EBD412030D13900973A30 /* Share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Share.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		917EBD412030D13900973A30 /* Share.iOS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Share.iOS.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		917EBD432030D13900973A30 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		917EBD462030D13900973A30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		917EBD482030D13900973A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		917EBD4F2030D17600973A30 /* ReadMinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReadMinder.entitlements; sourceTree = "<group>"; };
 		917EBD502030D17C00973A30 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		917EBD522030D21C00973A30 /* Share.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Share.entitlements; sourceTree = "<group>"; };
-		917EBD5F2030E1E900973A30 /* Today.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Today.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		917EBD5F2030E1E900973A30 /* Today.iOS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Today.iOS.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		917EBD602030E1E900973A30 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		917EBD632030E1E900973A30 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		917EBD662030E1E900973A30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		917EBD682030E1E900973A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		917EBD6F2030E20200973A30 /* Today.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Today.entitlements; sourceTree = "<group>"; };
+		917EBD8A2030F15F00973A30 /* MainAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembler.swift; sourceTree = "<group>"; };
 		94844C563DEC20CC3BE258A3 /* Pods-ReadMinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadMinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReadMinder/Pods-ReadMinder.debug.xcconfig"; sourceTree = "<group>"; };
 		B47A708D7CC28180B2D81467 /* Pods_ReadMinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadMinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D90C9B73B6DDE2093A53F5 /* Pods_ReadMinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadMinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,11 +188,11 @@
 		915462212028F9E800323B46 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				915462202028F9E800323B46 /* ReadMinder.app */,
-				915462342028F9E900323B46 /* ReadMinderTests.xctest */,
-				9154623F2028F9E900323B46 /* ReadMinderUITests.xctest */,
-				917EBD412030D13900973A30 /* Share.appex */,
-				917EBD5F2030E1E900973A30 /* Today.appex */,
+				915462202028F9E800323B46 /* ReadMinder.iOS.app */,
+				915462342028F9E900323B46 /* ReadMinder.iOS-Tests.xctest */,
+				9154623F2028F9E900323B46 /* ReadMinder.iOS-UITests.xctest */,
+				917EBD412030D13900973A30 /* Share.iOS.appex */,
+				917EBD5F2030E1E900973A30 /* Today.iOS.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,7 +201,8 @@
 			isa = PBXGroup;
 			children = (
 				917EBD4F2030D17600973A30 /* ReadMinder.entitlements */,
-				915462232028F9E800323B46 /* AppDelegate.swift */,
+				915462232028F9E800323B46 /* Application.swift */,
+				917EBD8A2030F15F00973A30 /* MainAssembler.swift */,
 				915462252028F9E800323B46 /* ViewController.swift */,
 				915462272028F9E800323B46 /* Main.storyboard */,
 				9154622A2028F9E800323B46 /* Assets.xcassets */,
@@ -265,9 +268,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9154621F2028F9E800323B46 /* ReadMinder */ = {
+		9154621F2028F9E800323B46 /* ReadMinder.iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 915462482028F9E900323B46 /* Build configuration list for PBXNativeTarget "ReadMinder" */;
+			buildConfigurationList = 915462482028F9E900323B46 /* Build configuration list for PBXNativeTarget "ReadMinder.iOS" */;
 			buildPhases = (
 				F294AD4619A85696D3D27354 /* [CP] Check Pods Manifest.lock */,
 				9154621C2028F9E800323B46 /* Sources */,
@@ -283,14 +286,14 @@
 				917EBD4A2030D13900973A30 /* PBXTargetDependency */,
 				917EBD6A2030E1E900973A30 /* PBXTargetDependency */,
 			);
-			name = ReadMinder;
+			name = ReadMinder.iOS;
 			productName = ReadMinder;
-			productReference = 915462202028F9E800323B46 /* ReadMinder.app */;
+			productReference = 915462202028F9E800323B46 /* ReadMinder.iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		915462332028F9E900323B46 /* ReadMinderTests */ = {
+		915462332028F9E900323B46 /* ReadMinder.iOS-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9154624B2028F9E900323B46 /* Build configuration list for PBXNativeTarget "ReadMinderTests" */;
+			buildConfigurationList = 9154624B2028F9E900323B46 /* Build configuration list for PBXNativeTarget "ReadMinder.iOS-Tests" */;
 			buildPhases = (
 				94B03C9E04E55838C7DDE7B7 /* [CP] Check Pods Manifest.lock */,
 				915462302028F9E900323B46 /* Sources */,
@@ -304,14 +307,14 @@
 			dependencies = (
 				915462362028F9E900323B46 /* PBXTargetDependency */,
 			);
-			name = ReadMinderTests;
+			name = "ReadMinder.iOS-Tests";
 			productName = ReadMinderTests;
-			productReference = 915462342028F9E900323B46 /* ReadMinderTests.xctest */;
+			productReference = 915462342028F9E900323B46 /* ReadMinder.iOS-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9154623E2028F9E900323B46 /* ReadMinderUITests */ = {
+		9154623E2028F9E900323B46 /* ReadMinder.iOS-UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9154624E2028F9E900323B46 /* Build configuration list for PBXNativeTarget "ReadMinderUITests" */;
+			buildConfigurationList = 9154624E2028F9E900323B46 /* Build configuration list for PBXNativeTarget "ReadMinder.iOS-UITests" */;
 			buildPhases = (
 				2C1B443AE9AEB8BAA5284E48 /* [CP] Check Pods Manifest.lock */,
 				9154623B2028F9E900323B46 /* Sources */,
@@ -325,14 +328,14 @@
 			dependencies = (
 				915462412028F9E900323B46 /* PBXTargetDependency */,
 			);
-			name = ReadMinderUITests;
+			name = "ReadMinder.iOS-UITests";
 			productName = ReadMinderUITests;
-			productReference = 9154623F2028F9E900323B46 /* ReadMinderUITests.xctest */;
+			productReference = 9154623F2028F9E900323B46 /* ReadMinder.iOS-UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		917EBD402030D13900973A30 /* Share */ = {
+		917EBD402030D13900973A30 /* Share.iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 917EBD4C2030D13900973A30 /* Build configuration list for PBXNativeTarget "Share" */;
+			buildConfigurationList = 917EBD4C2030D13900973A30 /* Build configuration list for PBXNativeTarget "Share.iOS" */;
 			buildPhases = (
 				917EBD3D2030D13900973A30 /* Sources */,
 				917EBD3E2030D13900973A30 /* Frameworks */,
@@ -342,14 +345,14 @@
 			);
 			dependencies = (
 			);
-			name = Share;
+			name = Share.iOS;
 			productName = Share;
-			productReference = 917EBD412030D13900973A30 /* Share.appex */;
+			productReference = 917EBD412030D13900973A30 /* Share.iOS.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		917EBD5E2030E1E900973A30 /* Today */ = {
+		917EBD5E2030E1E900973A30 /* Today.iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 917EBD6C2030E1E900973A30 /* Build configuration list for PBXNativeTarget "Today" */;
+			buildConfigurationList = 917EBD6C2030E1E900973A30 /* Build configuration list for PBXNativeTarget "Today.iOS" */;
 			buildPhases = (
 				917EBD5B2030E1E900973A30 /* Sources */,
 				917EBD5C2030E1E900973A30 /* Frameworks */,
@@ -359,9 +362,9 @@
 			);
 			dependencies = (
 			);
-			name = Today;
+			name = Today.iOS;
 			productName = Today;
-			productReference = 917EBD5F2030E1E900973A30 /* Today.appex */;
+			productReference = 917EBD5F2030E1E900973A30 /* Today.iOS.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -441,11 +444,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9154621F2028F9E800323B46 /* ReadMinder */,
-				917EBD402030D13900973A30 /* Share */,
-				917EBD5E2030E1E900973A30 /* Today */,
-				915462332028F9E900323B46 /* ReadMinderTests */,
-				9154623E2028F9E900323B46 /* ReadMinderUITests */,
+				9154621F2028F9E800323B46 /* ReadMinder.iOS */,
+				917EBD402030D13900973A30 /* Share.iOS */,
+				917EBD5E2030E1E900973A30 /* Today.iOS */,
+				915462332028F9E900323B46 /* ReadMinder.iOS-Tests */,
+				9154623E2028F9E900323B46 /* ReadMinder.iOS-UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -649,7 +652,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				915462262028F9E800323B46 /* ViewController.swift in Sources */,
-				915462242028F9E800323B46 /* AppDelegate.swift in Sources */,
+				915462242028F9E800323B46 /* Application.swift in Sources */,
+				917EBD8B2030F15F00973A30 /* MainAssembler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,22 +694,22 @@
 /* Begin PBXTargetDependency section */
 		915462362028F9E900323B46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9154621F2028F9E800323B46 /* ReadMinder */;
+			target = 9154621F2028F9E800323B46 /* ReadMinder.iOS */;
 			targetProxy = 915462352028F9E900323B46 /* PBXContainerItemProxy */;
 		};
 		915462412028F9E900323B46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9154621F2028F9E800323B46 /* ReadMinder */;
+			target = 9154621F2028F9E800323B46 /* ReadMinder.iOS */;
 			targetProxy = 915462402028F9E900323B46 /* PBXContainerItemProxy */;
 		};
 		917EBD4A2030D13900973A30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 917EBD402030D13900973A30 /* Share */;
+			target = 917EBD402030D13900973A30 /* Share.iOS */;
 			targetProxy = 917EBD492030D13900973A30 /* PBXContainerItemProxy */;
 		};
 		917EBD6A2030E1E900973A30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 917EBD5E2030E1E900973A30 /* Today */;
+			target = 917EBD5E2030E1E900973A30 /* Today.iOS */;
 			targetProxy = 917EBD692030E1E900973A30 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1039,7 +1043,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		915462482028F9E900323B46 /* Build configuration list for PBXNativeTarget "ReadMinder" */ = {
+		915462482028F9E900323B46 /* Build configuration list for PBXNativeTarget "ReadMinder.iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				915462492028F9E900323B46 /* Debug */,
@@ -1048,7 +1052,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9154624B2028F9E900323B46 /* Build configuration list for PBXNativeTarget "ReadMinderTests" */ = {
+		9154624B2028F9E900323B46 /* Build configuration list for PBXNativeTarget "ReadMinder.iOS-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9154624C2028F9E900323B46 /* Debug */,
@@ -1057,7 +1061,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9154624E2028F9E900323B46 /* Build configuration list for PBXNativeTarget "ReadMinderUITests" */ = {
+		9154624E2028F9E900323B46 /* Build configuration list for PBXNativeTarget "ReadMinder.iOS-UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9154624F2028F9E900323B46 /* Debug */,
@@ -1066,7 +1070,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		917EBD4C2030D13900973A30 /* Build configuration list for PBXNativeTarget "Share" */ = {
+		917EBD4C2030D13900973A30 /* Build configuration list for PBXNativeTarget "Share.iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				917EBD4D2030D13900973A30 /* Debug */,
@@ -1075,7 +1079,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		917EBD6C2030E1E900973A30 /* Build configuration list for PBXNativeTarget "Today" */ = {
+		917EBD6C2030E1E900973A30 /* Build configuration list for PBXNativeTarget "Today.iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				917EBD6D2030E1E900973A30 /* Debug */,
