@@ -20,6 +20,10 @@
 		917EBD4B2030D13900973A30 /* Share.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 917EBD412030D13900973A30 /* Share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		917EBD512030D17C00973A30 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917EBD502030D17C00973A30 /* CloudKit.framework */; };
 		917EBD532030D22300973A30 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917EBD502030D17C00973A30 /* CloudKit.framework */; };
+		917EBD612030E1E900973A30 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917EBD602030E1E900973A30 /* NotificationCenter.framework */; };
+		917EBD642030E1E900973A30 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917EBD632030E1E900973A30 /* TodayViewController.swift */; };
+		917EBD672030E1E900973A30 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917EBD652030E1E900973A30 /* MainInterface.storyboard */; };
+		917EBD6B2030E1E900973A30 /* Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 917EBD5F2030E1E900973A30 /* Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AA144A30AAF2D3065DFAA361 /* Pods_ReadMinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47A708D7CC28180B2D81467 /* Pods_ReadMinder.framework */; };
 		BBDB638E6817F40D723D4589 /* Pods_ReadMinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1055B6362C65A12746FDD990 /* Pods_ReadMinderTests.framework */; };
 /* End PBXBuildFile section */
@@ -46,6 +50,13 @@
 			remoteGlobalIDString = 917EBD402030D13900973A30;
 			remoteInfo = Share;
 		};
+		917EBD692030E1E900973A30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 915462182028F9E800323B46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 917EBD5E2030E1E900973A30;
+			remoteInfo = Today;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +66,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				917EBD6B2030E1E900973A30 /* Today.appex in Embed App Extensions */,
 				917EBD4B2030D13900973A30 /* Share.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -85,6 +97,12 @@
 		917EBD4F2030D17600973A30 /* ReadMinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReadMinder.entitlements; sourceTree = "<group>"; };
 		917EBD502030D17C00973A30 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		917EBD522030D21C00973A30 /* Share.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Share.entitlements; sourceTree = "<group>"; };
+		917EBD5F2030E1E900973A30 /* Today.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Today.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		917EBD602030E1E900973A30 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		917EBD632030E1E900973A30 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		917EBD662030E1E900973A30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		917EBD682030E1E900973A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		917EBD6F2030E20200973A30 /* Today.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Today.entitlements; sourceTree = "<group>"; };
 		94844C563DEC20CC3BE258A3 /* Pods-ReadMinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadMinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReadMinder/Pods-ReadMinder.debug.xcconfig"; sourceTree = "<group>"; };
 		B47A708D7CC28180B2D81467 /* Pods_ReadMinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadMinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D90C9B73B6DDE2093A53F5 /* Pods_ReadMinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadMinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +146,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		917EBD5C2030E1E900973A30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				917EBD612030E1E900973A30 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -138,6 +164,7 @@
 				B47A708D7CC28180B2D81467 /* Pods_ReadMinder.framework */,
 				1055B6362C65A12746FDD990 /* Pods_ReadMinderTests.framework */,
 				C8D90C9B73B6DDE2093A53F5 /* Pods_ReadMinderUITests.framework */,
+				917EBD602030E1E900973A30 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -149,6 +176,7 @@
 				915462372028F9E900323B46 /* ReadMinderTests */,
 				915462422028F9E900323B46 /* ReadMinderUITests */,
 				917EBD422030D13900973A30 /* Share */,
+				917EBD622030E1E900973A30 /* Today */,
 				915462212028F9E800323B46 /* Products */,
 				BE96C26128177900EC086F88 /* Pods */,
 				6E69AF5DBB46CD1FC6F04C7C /* Frameworks */,
@@ -162,6 +190,7 @@
 				915462342028F9E900323B46 /* ReadMinderTests.xctest */,
 				9154623F2028F9E900323B46 /* ReadMinderUITests.xctest */,
 				917EBD412030D13900973A30 /* Share.appex */,
+				917EBD5F2030E1E900973A30 /* Today.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,6 +238,17 @@
 			path = Share;
 			sourceTree = "<group>";
 		};
+		917EBD622030E1E900973A30 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				917EBD6F2030E20200973A30 /* Today.entitlements */,
+				917EBD632030E1E900973A30 /* TodayViewController.swift */,
+				917EBD652030E1E900973A30 /* MainInterface.storyboard */,
+				917EBD682030E1E900973A30 /* Info.plist */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
 		BE96C26128177900EC086F88 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +281,7 @@
 			);
 			dependencies = (
 				917EBD4A2030D13900973A30 /* PBXTargetDependency */,
+				917EBD6A2030E1E900973A30 /* PBXTargetDependency */,
 			);
 			name = ReadMinder;
 			productName = ReadMinder;
@@ -306,6 +347,23 @@
 			productReference = 917EBD412030D13900973A30 /* Share.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		917EBD5E2030E1E900973A30 /* Today */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 917EBD6C2030E1E900973A30 /* Build configuration list for PBXNativeTarget "Today" */;
+			buildPhases = (
+				917EBD5B2030E1E900973A30 /* Sources */,
+				917EBD5C2030E1E900973A30 /* Frameworks */,
+				917EBD5D2030E1E900973A30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Today;
+			productName = Today;
+			productReference = 917EBD5F2030E1E900973A30 /* Today.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -359,6 +417,15 @@
 							};
 						};
 					};
+					917EBD5E2030E1E900973A30 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 				};
 			};
 			buildConfigurationList = 9154621B2028F9E800323B46 /* Build configuration list for PBXProject "ReadMinder" */;
@@ -376,6 +443,7 @@
 			targets = (
 				9154621F2028F9E800323B46 /* ReadMinder */,
 				917EBD402030D13900973A30 /* Share */,
+				917EBD5E2030E1E900973A30 /* Today */,
 				915462332028F9E900323B46 /* ReadMinderTests */,
 				9154623E2028F9E900323B46 /* ReadMinderUITests */,
 			);
@@ -412,6 +480,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				917EBD472030D13900973A30 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		917EBD5D2030E1E900973A30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				917EBD672030E1E900973A30 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +677,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		917EBD5B2030E1E900973A30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				917EBD642030E1E900973A30 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -618,6 +702,11 @@
 			isa = PBXTargetDependency;
 			target = 917EBD402030D13900973A30 /* Share */;
 			targetProxy = 917EBD492030D13900973A30 /* PBXContainerItemProxy */;
+		};
+		917EBD6A2030E1E900973A30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 917EBD5E2030E1E900973A30 /* Today */;
+			targetProxy = 917EBD692030E1E900973A30 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -642,6 +731,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				917EBD462030D13900973A30 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		917EBD652030E1E900973A30 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				917EBD662030E1E900973A30 /* Base */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -896,6 +993,40 @@
 			};
 			name = Release;
 		};
+		917EBD6D2030E1E900973A30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Today/Today.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68RDDPSR29;
+				INFOPLIST_FILE = Today/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wonderbeard.read-minder.today";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		917EBD6E2030E1E900973A30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Today/Today.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68RDDPSR29;
+				INFOPLIST_FILE = Today/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wonderbeard.read-minder.today";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -940,6 +1071,15 @@
 			buildConfigurations = (
 				917EBD4D2030D13900973A30 /* Debug */,
 				917EBD4E2030D13900973A30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		917EBD6C2030E1E900973A30 /* Build configuration list for PBXNativeTarget "Today" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				917EBD6D2030E1E900973A30 /* Debug */,
+				917EBD6E2030E1E900973A30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
