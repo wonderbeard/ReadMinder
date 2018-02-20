@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42FE7A2E0F07CACBCC4828E8 /* Pods_ReadMinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D90C9B73B6DDE2093A53F5 /* Pods_ReadMinderUITests.framework */; };
+		9118A615203CBCAA00650CA9 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917EBD502030D17C00973A30 /* CloudKit.framework */; };
 		915462242028F9E800323B46 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915462232028F9E800323B46 /* Application.swift */; };
 		915462262028F9E800323B46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915462252028F9E800323B46 /* ViewController.swift */; };
 		915462292028F9E800323B46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915462272028F9E800323B46 /* Main.storyboard */; };
@@ -153,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				917EBD612030E1E900973A30 /* NotificationCenter.framework in Frameworks */,
+				9118A615203CBCAA00650CA9 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +429,12 @@
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
 							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
 						};
 					};
 				};
@@ -445,10 +453,10 @@
 			projectRoot = "";
 			targets = (
 				9154621F2028F9E800323B46 /* ReadMinder.iOS */,
-				917EBD402030D13900973A30 /* Share.iOS */,
-				917EBD5E2030E1E900973A30 /* Today.iOS */,
 				915462332028F9E900323B46 /* ReadMinder.iOS-Tests */,
 				9154623E2028F9E900323B46 /* ReadMinder.iOS-UITests */,
+				917EBD402030D13900973A30 /* Share.iOS */,
+				917EBD5E2030E1E900973A30 /* Today.iOS */,
 			);
 		};
 /* End PBXProject section */
